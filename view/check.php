@@ -119,7 +119,7 @@ if ($marca != 'HP'){
             <input hidden type="text" value="<?php echo "$dirExcel/$fileExcel"; ?>" name="txtExcel" id="txtExcel">
             <input hidden type="text" value="<?php echo $comentarios; ?>" name="txtComentario" id="txtComentario">
             <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1" download="pega.pdf">Generar PDF</button>
-            <br>
+            <br><br>
             <a href="../" class="uk-button uk-button-primary uk-button-large uk-width-1-1">Volver a Inicio</a>
         </form>
     </div>
