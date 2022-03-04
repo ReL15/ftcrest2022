@@ -98,6 +98,5 @@ $pdf->WriteHTML($stylesheet,\Mpdf\HTMLParserMode::HEADER_CSS);
 $pdf->WriteHTML($cuerpo, 2);
 
 $pdf->Output('acta_portada.pdf', 'D');
-header("Location: ./");
-die();
+
 ?>
