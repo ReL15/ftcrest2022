@@ -92,7 +92,7 @@ $cuerpo = '
     </table>
 ';
 
-$stylesheet = file_get_contents('\css\style.css');
+$stylesheet = file_get_contents('style.css');
 $pdf->WriteHTML($stylesheet,\Mpdf\HTMLParserMode::HEADER_CSS);
 
 $pdf->WriteHTML($cuerpo, 2);
