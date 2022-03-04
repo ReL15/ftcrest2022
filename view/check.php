@@ -3,7 +3,7 @@
 #FIXME: Subida de Archivos
 
 #TODO: Subida de Imagenes
-$dirImagen = '../upload/img';
+$dirImagen = '../upload';
 $fileImagen = $_FILES['fileImagen']['name'];
 $tmpfileImagen = $_FILES['fileImagen']['tmp_name'];
 $nombreImagen = basename($fileImagen);
@@ -18,7 +18,7 @@ if ($ubicacion) {
 }
 
 #TODO: Subida de Excel
-$dirExcel = '../upload/doc';
+$dirExcel = '../upload';
 $fileExcel = $_FILES['fileExcel']['name'];
 $tmpfileExcel = $_FILES['fileExcel']['tmp_name'];
 $archivoExcel = basename($fileExcel);
