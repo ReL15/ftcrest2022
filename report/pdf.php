@@ -21,15 +21,15 @@ $letra = $hojaActual->getHighestColumn();
 $alumno = $hojaActual->getCellByColumnAndRow('3', '9');
 
 $centroescolar = $hojaActual->getCellByColumnAndRow('3', '10');
-$codigoCE = $hojaActual->getCellByColumnAndRow('8', '9');
-$CE = $centroescolar.' - '. $codigoCE;
+$CE = $centroescolar;
 
 $sede = $hojaActual->getCellByColumnAndRow('3', '12');
 $lugarfecha = $hojaActual->getCellByColumnAndRow('3', '21');
 $observaciones = $hojaActual->getCellByColumnAndRow('3', '23');
-$descripcion = $hojaActual->getCellByColumnAndRow('3', '26');
-$marca = $hojaActual->getCellByColumnAndRow('6', '26');
-$serie = $hojaActual->getCellByColumnAndRow('8', '26');
+$observaciones2 = $hojaActual->getCellByColumnAndRow('3', '24');
+$descripcion = $hojaActual->getCellByColumnAndRow('3', '27');
+$marca = $hojaActual->getCellByColumnAndRow('6', '27');
+$serie = $hojaActual->getCellByColumnAndRow('8', '27');
 
 if ($marca != 'HP'){
     $proveedor = 'PBS';
@@ -87,7 +87,7 @@ $cuerpo = '
         </tr>
         <tr>
             <td style="border: black 1cm solid; width: 4cm; background-color: white;"><b>OBSERVACIONES</b></td>
-            <td style="border: black 1cm solid; width: 6cm; background-color: white;">'. $observaciones .'. '. $comentarios .'</td>
+            <td style="border: black 1cm solid; width: 6cm; background-color: white;">'. $observaciones .' ' . '. '. $comentarios .'</td>
         </tr>
     </table>
 ';
